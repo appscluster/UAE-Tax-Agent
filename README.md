@@ -1,4 +1,4 @@
-# A: UAE Tax and eInvoicing Readiness Agent
+# A: UAE Tax and eInvoicing Readiness Agent Team
 
 Project brief. Research checked on 7 November 2026, Asia/Dubai (UTC+4). Status: planning only. No application has been built or deployed.
 
@@ -12,6 +12,66 @@ Do not hardcode the old July appointment deadline. The MoF amendment announcemen
 
 Corporate tax is a separate regime. The general FTA guide describes 0% on taxable income up to AED 375,000 and 9% on the portion above that amount, with separate treatment for Qualifying Free Zone Persons [T5]. Revenue for eInvoicing scheduling is not corporate taxable income. The demo must explicitly prevent that confusion. Free zone treatment, exemptions, groups, reliefs and multinational minimum tax are outside MVP and require specialist review.
 
+## Why this needs a team of agents
+
+This is the recommended primary demo for the DataRobot interview.
+
+A single tool calling agent with a document chatbot would technically count as agentic, but it cannot safely judge a whole invoice batch on its own. The work naturally splits into roles that must check each other: extracting fields, classifying tax treatment, finding the governing guidance, validating structure against the PINT AE specification, and auditing the classifier's judgement independently. When one model does all of these, its own errors go unchallenged. A team makes every handoff visible, lets independent specialists run in parallel per invoice, and gives a human approver a clear gate before anything is sent to an Accredited Service Provider (ASP).
+
+The design extends the Planner, Operator and Checker pattern already used in Hermes and in the DataRobot Demo: the Orchestrator plans, the specialists operate, and the Validator and Auditor are the checkers.
+
+## Agent team
+
+| Agent | Role | Inputs | Outputs | Tools |
+|---|---|---|---|---|
+| Orchestrator | Splits the invoice batch, assigns work, tracks progress and retry budget | Uploaded batch, tenant profile, research date | Per invoice work items, run state, SSE progress events | LangGraph state, task queue, audit log |
+| Extractor | Reads PDFs and ERP exports into structured invoice fields | Synthetic PDF, JSON or CSV export | Structured invoice record with field level source references | PDF parser, JSON and CSV parsers, upload quarantine |
+| Tax Classifier | Decides VAT and corporate tax treatment for each line | Structured invoice, tenant profile | Proposed treatment per line with reasoning and confidence | Reviewer approved rule set, deterministic arithmetic |
+| Researcher | Retrieves and cites the FTA and MoF guidance behind each decision | Classifier questions, source register | Cited passages with source version and page | Versioned retrieval over the official source register |
+| Validator | Checks each invoice against the frozen PINT AE field specification and business rules | Structured invoice plus proposed treatment | Pass, or rejection with the failed rule, returned to the Tax Classifier | Deterministic schema and rule checks, totals arithmetic |
+| Auditor | Blind reviews a sample of the Classifier's calls without seeing its reasoning | Sampled invoices and cited sources only | Agree or disagree per sampled call, disagreements escalated | Independent model call, same retrieval, sampling policy |
+| Human approver | Accountant who signs off the readiness pack | Validated batch, audit results, open questions | Approve, reject or escalate, recorded in the audit trail | Approval UI |
+
+### Orchestration flow and handoffs
+
+1. The Orchestrator splits the batch and sends each invoice to the Extractor.
+2. The Tax Classifier and the Researcher work in parallel on each extracted invoice. The Classifier proposes a treatment and the Researcher attaches the governing citation.
+3. The Validator checks the result. A failing invoice goes back to the Tax Classifier with the failed rule. Repair is bounded to one attempt, after which the invoice is marked "to verify" and escalated.
+4. The Auditor blind samples Classifier decisions. Any disagreement is escalated rather than silently resolved.
+5. The Human approver sees the batch summary, every rejection and every disagreement, and decides. Nothing is transmitted to an ASP in the demo, and nothing leaves the system without approval.
+
+```mermaid
+flowchart TD
+    Batch[Synthetic invoice batch] --> Orch[Orchestrator]
+    Orch --> Ext[Extractor]
+    Ext --> Cls[Tax Classifier]
+    Ext --> Res[Researcher cites FTA guidance]
+    Res --> Cls
+    Cls --> Val[Validator PINT AE schema and rules]
+    Val -->|Rejected with failed rule, one repair| Cls
+    Val -->|Still failing| Esc[Escalate as to verify]
+    Val -->|Pass| Aud[Auditor blind sample review]
+    Aud -->|Disagreement| Esc
+    Aud -->|Agreement| Gate{Human approver}
+    Esc --> Gate
+    Gate -->|Approve| Pack[Approved readiness pack, no ASP transmission in demo]
+    Gate -->|Reject or escalate| Log[(Decision audit)]
+    Pack --> Log
+```
+
+### Scripted demo moment: one agent catches another
+
+A seeded synthetic invoice has a missing buyer identifier and line totals that do not reconcile. The Tax Classifier proposes a treatment anyway. The Validator rejects the invoice against the PINT AE specification, names the failed rule, and returns it to the Classifier. The Classifier cannot fix a missing identifier, so after one repair attempt the invoice is escalated as "to verify". Separately, the Auditor blind samples Classifier calls and disagrees with one seeded edge case, which also goes to the human approver. The audience sees each rejection and disagreement in the live SSE trace.
+
+### Rubric mapping
+
+| Criterion | How the team design addresses it |
+|---|---|
+| Problem Solving Acumen | Real compliance problem with dated FTA deadlines, decomposed into roles that each own one risk |
+| Strategic Vision | Enterprise compliance use case of the kind DataRobot sells into, with a path to more entities and approved validators |
+| Technical Credibility | Functional multi agent workflow, deterministic Validator, independent Auditor, bounded repair, human gate and audit trail |
+| Creativity and Passion | Visible moment where one agent catches another's mistake, plus Arabic and English cited explanations |
+
 ## Target users and value
 
 Primary users are controllers and finance managers at UAE mainland trading or professional services businesses. Accountants approve conclusions. A consulting firm could use the same workflow across isolated customer workspaces.
@@ -20,12 +80,12 @@ The output is a traceable readiness pack: applicable source versions, missing in
 
 ## Live demo storyline: 6 minutes
 
-1. Minute 0 to 1: open the fictional tenant Desert Ledger Trading. Show its synthetic company profile, stated revenue and research date. Explain that no real tax registration number is used.
-2. Minute 1 to 2: upload a synthetic invoice PDF, structured invoice JSON and contract. Ask in English which eInvoicing phase could apply. The planner separates classification, data checks and evidence retrieval.
-3. Minute 2 to 3: deterministic checks find a missing buyer identifier and inconsistent totals in seeded fixtures. Explain that the PDF alone is not an eInvoice. Required fields must reference a frozen official field specification, not an invented universal checklist.
-4. Minute 3 to 4: ask in Arabic why an AED 375,000 threshold does not set the eInvoicing phase. Display a cited Arabic explanation and original English evidence.
-5. Minute 4 to 5: present conflicting revenue or a free zone question. The checker refuses a final conclusion and escalates instead of guessing. Show an old deadline being rejected in favour of a newer source.
-6. Minute 5 to 6: the accountant approves a bounded readiness report, not a return or invoice transmission. Create three cited learning cards and a short quiz for the accounts team.
+1. Minute 0 to 1: open the fictional tenant Desert Ledger Trading. Show its synthetic company profile, stated revenue and research date. Explain that no real tax registration number is used, and introduce the agent team on screen.
+2. Minute 1 to 2: upload a small synthetic invoice batch (PDF, structured JSON and a contract). The Orchestrator splits the batch and the Extractor produces structured records. The SSE trace shows each agent picking up work.
+3. Minute 2 to 3: the Tax Classifier and Researcher run in parallel. The Validator rejects the seeded invoice with a missing buyer identifier and inconsistent totals, returns it to the Classifier, and escalates it after one repair attempt. Explain that a PDF alone is not an eInvoice and that required fields reference a frozen official specification.
+4. Minute 3 to 4: ask in Arabic why an AED 375,000 threshold does not set the eInvoicing phase. The Researcher displays a cited Arabic explanation with the original English evidence.
+5. Minute 4 to 5: the Auditor blind samples Classifier calls and disagrees on a seeded free zone or conflicting revenue case. The team refuses a final conclusion and escalates instead of guessing. Show an old deadline being rejected in favour of a newer source.
+6. Minute 5 to 6: the accountant reviews the rejections and disagreements and approves a bounded readiness report, not a return or invoice transmission. Create three cited learning cards and a short quiz for the accounts team.
 
 ## MVP versus later
 
@@ -69,15 +129,17 @@ flowchart TD
     API --> Guard[Scope and tenant guard]
     Guard --> Ingest[Parse uploads and quarantine instructions]
     Ingest --> Store[(SQLite documents chunks graph and audit)]
-    Store --> Plan[LangGraph planner]
-    Plan --> Operator[Operator selects allowed tools]
-    Operator --> Retrieve[Versioned retrieval with page citations]
-    Operator --> Rules[Deterministic domain rules and arithmetic]
-    Retrieve --> Check[Checker validates claims citations dates and scope]
-    Rules --> Check
-    Check -->|Unsupported or conflict| Escalate[Abstain and request expert review]
-    Check -->|Repair once| Operator
-    Check -->|Evidence sufficient| Human[Human review checkpoint]
+    Store --> Orch[Orchestrator: LangGraph planner]
+    Orch --> Ext[Extractor]
+    Ext --> Cls[Tax Classifier]
+    Ext --> Res[Researcher with versioned retrieval and page citations]
+    Res --> Cls
+    Cls --> Val[Validator: deterministic PINT AE rules and arithmetic]
+    Val -->|Repair once| Cls
+    Val -->|Pass| Aud[Auditor: blind sample review]
+    Val -->|Unsupported or conflict| Escalate[Abstain and request expert review]
+    Aud -->|Disagreement| Escalate
+    Aud -->|Evidence sufficient| Human[Human review checkpoint]
     Escalate --> Human
     Human -->|Approve| Report[Save approved report and learning cards]
     Human -->|Reject| Audit[(Decision audit)]
@@ -85,6 +147,8 @@ flowchart TD
     Report --> Audit
     Report --> UI
 ```
+
+Each agent is a LangGraph node with its own prompt, allowed tools and output schema. The Orchestrator is the planner, the Extractor, Tax Classifier and Researcher are operators, and the Validator and Auditor are checkers.
 
 The checker must validate source entailment, not merely the presence of a citation. A second model alone is not proof. Numeric comparisons and required field checks run as deterministic code. Bound repair to one attempt, then abstain. Uploads are untrusted data and cannot grant tools or override system instructions. Approval requires a completed run whose checker passed and whose document version has not changed. Reject cross tenant access before retrieval.
 
