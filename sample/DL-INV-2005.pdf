@@ -1,0 +1,127 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2808 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(SYNTHETIC SAMPLE - NOT A TAX RECORD AND NOT AN EINVOICE) Tj
+0 -14 Td (Desert Ledger Trading LLC) Tj
+0 -14 Td (Warehouse 14, Street 8, Al Quoz Industrial 3, Dubai) Tj
+0 -14 Td (PO Box 94021, Dubai    Tel +971 4 000 1400) Tj
+0 -14 Td (accounts@desert-ledger.example) Tj
+0 -14 Td (TRN SYNTHETIC_TRN_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Document          DL-INV-2005.pdf) Tj
+0 -14 Td (Invoice ID        DL-INV-2005) Tj
+0 -14 Td (Issue date        2026-09-28) Tj
+0 -14 Td (Supply date       2026-09-15) Tj
+0 -14 Td (Due date          2026-10-28) Tj
+0 -14 Td (Currency          AED) Tj
+0 -14 Td (Payment terms     30 days from the invoice date) Tj
+0 -14 Td (Purchase order    AD-PO-318) Tj
+0 -14 Td (Delivery note     DL-DN-7844) Tj
+0 -14 Td () Tj
+0 -14 Td (Buyer) Tj
+0 -14 Td (  Name            Amber Dunes Fit-Out LLC) Tj
+0 -14 Td (  Address         Office 906, Business Bay, Dubai) Tj
+0 -14 Td (  TRN             SYNTHETIC_BUYER_THREE_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Description                              Qty  Unit         Net          VAT) Tj
+0 -14 Td (Gypsum board 12.5mm                        90 sheet  AED 2,520.00    5%   AED 126.00) Tj
+0 -14 Td (Metal stud 70mm                          140 length  AED 1,596.00    5%    AED 79.80) Tj
+0 -14 Td (Insulation roll 50mm                        30 roll  AED 1,380.00    5%    AED 69.00) Tj
+0 -14 Td (Joint compound 25kg                          18 bag    AED 585.00    5%    AED 29.25) Tj
+0 -14 Td (Drywall screws, box of 1000                  40 box    AED 560.00    5%    AED 28.00) Tj
+0 -14 Td (Access panel 600x600                         8 each  AED 1,400.00    5%    AED 70.00) Tj
+0 -14 Td (Fixing labour                               24 hour  AED 2,280.00    5%   AED 114.00) Tj
+0 -14 Td (Site protection and waste removal             1 job    AED 350.00    5%    AED 17.50) Tj
+0 -14 Td () Tj
+0 -14 Td (Net total         AED 10,671.00) Tj
+0 -14 Td (VAT total         AED 533.55) Tj
+0 -14 Td (Gross total       AED 11,204.55) Tj
+0 -14 Td () Tj
+0 -14 Td (Notes) Tj
+0 -14 Td (Materials delivered across 15 to 27 September 2026. Synthetic invoice. Not a tax record.) Tj
+0 -14 Td () Tj
+0 -14 Td (Site              Level 12, tower B, Business Bay) Tj
+0 -14 Td (Bank              Synthetic Bank, IBAN AE00 SYNTH 0000 0000 0001) Tj
+0 -14 Td () Tj
+0 -14 Td (This PDF is a synthetic desk sample. It is not a filing.) Tj
+0 -14 Td (---JSON---) Tj
+0 -14 Td (eyJraW5kIjogImludm9pY2UiLCAiaW52b2ljZV9pZCI6ICJETC1JTlYtMjAwNSIsICJzeW50aGV0aWMi) Tj
+0 -14 Td (OiB0cnVlLCAic3VwcGxpZXJfbmFtZSI6ICJEZXNlcnQgTGVkZ2VyIFRyYWRpbmcgTExDIiwgInN1cHBs) Tj
+0 -14 Td (aWVyX3RybiI6ICJTWU5USEVUSUNfVFJOX05PVF9WQUxJRCIsICJzdXBwbGllcl9hZGRyZXNzIjogIldh) Tj
+0 -14 Td (cmVob3VzZSAxNCwgU3RyZWV0IDgsIEFsIFF1b3ogSW5kdXN0cmlhbCAzLCBEdWJhaSIsICJzdXBwbGll) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 2837 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(cl9wb19ib3giOiAiUE8gQm94IDk0MDIxLCBEdWJhaSIsICJzdXBwbGllcl9waG9uZSI6ICIrOTcxIDQg) Tj
+0 -14 Td (MDAwIDE0MDAiLCAic3VwcGxpZXJfZW1haWwiOiAiYWNjb3VudHNAZGVzZXJ0LWxlZGdlci5leGFtcGxl) Tj
+0 -14 Td (IiwgImN1cnJlbmN5IjogIkFFRCIsICJsaW5lcyI6IFt7ImRlc2NyaXB0aW9uIjogIkd5cHN1bSBib2Fy) Tj
+0 -14 Td (ZCAxMi41bW0iLCAicXR5IjogOTAsICJ1bml0IjogInNoZWV0IiwgInVuaXRfcHJpY2UiOiAyOC4wLCAi) Tj
+0 -14 Td (bmV0IjogMjUyMC4wLCAidmF0X3JhdGUiOiAwLjA1LCAidmF0IjogMTI2LjB9LCB7ImRlc2NyaXB0aW9u) Tj
+0 -14 Td (IjogIk1ldGFsIHN0dWQgNzBtbSIsICJxdHkiOiAxNDAsICJ1bml0IjogImxlbmd0aCIsICJ1bml0X3By) Tj
+0 -14 Td (aWNlIjogMTEuNCwgIm5ldCI6IDE1OTYuMCwgInZhdF9yYXRlIjogMC4wNSwgInZhdCI6IDc5Ljh9LCB7) Tj
+0 -14 Td (ImRlc2NyaXB0aW9uIjogIkluc3VsYXRpb24gcm9sbCA1MG1tIiwgInF0eSI6IDMwLCAidW5pdCI6ICJy) Tj
+0 -14 Td (b2xsIiwgInVuaXRfcHJpY2UiOiA0Ni4wLCAibmV0IjogMTM4MC4wLCAidmF0X3JhdGUiOiAwLjA1LCAi) Tj
+0 -14 Td (dmF0IjogNjkuMH0sIHsiZGVzY3JpcHRpb24iOiAiSm9pbnQgY29tcG91bmQgMjVrZyIsICJxdHkiOiAx) Tj
+0 -14 Td (OCwgInVuaXQiOiAiYmFnIiwgInVuaXRfcHJpY2UiOiAzMi41LCAibmV0IjogNTg1LjAsICJ2YXRfcmF0) Tj
+0 -14 Td (ZSI6IDAuMDUsICJ2YXQiOiAyOS4yNX0sIHsiZGVzY3JpcHRpb24iOiAiRHJ5d2FsbCBzY3Jld3MsIGJv) Tj
+0 -14 Td (eCBvZiAxMDAwIiwgInF0eSI6IDQwLCAidW5pdCI6ICJib3giLCAidW5pdF9wcmljZSI6IDE0LjAsICJu) Tj
+0 -14 Td (ZXQiOiA1NjAuMCwgInZhdF9yYXRlIjogMC4wNSwgInZhdCI6IDI4LjB9LCB7ImRlc2NyaXB0aW9uIjog) Tj
+0 -14 Td (IkFjY2VzcyBwYW5lbCA2MDB4NjAwIiwgInF0eSI6IDgsICJ1bml0IjogImVhY2giLCAidW5pdF9wcmlj) Tj
+0 -14 Td (ZSI6IDE3NS4wLCAibmV0IjogMTQwMC4wLCAidmF0X3JhdGUiOiAwLjA1LCAidmF0IjogNzAuMH0sIHsi) Tj
+0 -14 Td (ZGVzY3JpcHRpb24iOiAiRml4aW5nIGxhYm91ciIsICJxdHkiOiAyNCwgInVuaXQiOiAiaG91ciIsICJ1) Tj
+0 -14 Td (bml0X3ByaWNlIjogOTUuMCwgIm5ldCI6IDIyODAuMCwgInZhdF9yYXRlIjogMC4wNSwgInZhdCI6IDEx) Tj
+0 -14 Td (NC4wfSwgeyJkZXNjcmlwdGlvbiI6ICJTaXRlIHByb3RlY3Rpb24gYW5kIHdhc3RlIHJlbW92YWwiLCAi) Tj
+0 -14 Td (cXR5IjogMSwgInVuaXQiOiAiam9iIiwgInVuaXRfcHJpY2UiOiAzNTAuMCwgIm5ldCI6IDM1MC4wLCAi) Tj
+0 -14 Td (dmF0X3JhdGUiOiAwLjA1LCAidmF0IjogMTcuNX1dLCAibmV0X3RvdGFsIjogMTA2NzEuMCwgInZhdF90) Tj
+0 -14 Td (b3RhbCI6IDUzMy41NSwgImdyb3NzX3RvdGFsIjogMTEyMDQuNTUsICJub3RlcyI6ICJNYXRlcmlhbHMg) Tj
+0 -14 Td (ZGVsaXZlcmVkIGFjcm9zcyAxNSB0byAyNyBTZXB0ZW1iZXIgMjAyNi4gU3ludGhldGljIGludm9pY2Uu) Tj
+0 -14 Td (IE5vdCBhIHRheCByZWNvcmQuIiwgInNlZWRfY2xhc3NpZmllcl9lcnJvciI6ICIiLCAiYnV5ZXJfbmFt) Tj
+0 -14 Td (ZSI6ICJBbWJlciBEdW5lcyBGaXQtT3V0IExMQyIsICJidXllcl90cm4iOiAiU1lOVEhFVElDX0JVWUVS) Tj
+0 -14 Td (X1RIUkVFX05PVF9WQUxJRCIsICJidXllcl9hZGRyZXNzIjogIk9mZmljZSA5MDYsIEJ1c2luZXNzIEJh) Tj
+0 -14 Td (eSwgRHViYWkiLCAiaXNzdWVfZGF0ZSI6ICIyMDI2LTA5LTI4IiwgInN1cHBseV9kYXRlIjogIjIwMjYt) Tj
+0 -14 Td (MDktMTUiLCAiZHVlX2RhdGUiOiAiMjAyNi0xMC0yOCIsICJwYXltZW50X3Rlcm1zIjogIjMwIGRheXMg) Tj
+0 -14 Td (ZnJvbSB0aGUgaW52b2ljZSBkYXRlIiwgInB1cmNoYXNlX29yZGVyIjogIkFELVBPLTMxOCIsICJkZWxp) Tj
+0 -14 Td (dmVyeV9ub3RlIjogIkRMLUROLTc4NDQifQ==) Tj
+0 -14 Td () Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000003107 00000 n 
+0000003233 00000 n 
+0000006122 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+6192
+%%EOF

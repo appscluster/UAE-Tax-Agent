@@ -1,0 +1,66 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8421:8421"
+    environment:
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://host.docker.internal:20128/v1}
+      LLM_MODEL: ${LLM_MODEL:-gh/gpt-5.6-terra}
+      LLM_FALLBACK_MODEL: ${LLM_FALLBACK_MODEL:-gh/gpt-5.6-luna}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODE: ${LLM_MODE:-live}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-25}
+      TENANT_VOLUME_KEY: ${TENANT_VOLUME_KEY:-demo-volume-passphrase-not-a-production-secret}
+      RESIDENCY_VERIFIED: ${RESIDENCY_VERIFIED:-false}
+      RETENTION_DAYS: ${RETENTION_DAYS:-30}
+      DB_PATH: /data/tenant/readiness.db
+      BACKUP_DIR: /data/backup
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - tenant:/data/tenant
+      - backup:/data/backup
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8420:8420"
+    depends_on:
+      - backend
+
+  gitleaks:
+    profiles: ["security"]
+    image: zricethezav/gitleaks:v8.30.1
+    working_dir: /src
+    volumes: [".:/src"]
+    command: ["dir", ".", "--redact", "--no-banner", "--exit-code", "0", "--report-format", "json", "--report-path", "/src/reports/security/gitleaks.json"]
+
+  trufflehog:
+    profiles: ["security"]
+    image: trufflesecurity/trufflehog:3.99.8
+    working_dir: /src
+    volumes: [".:/src"]
+    command: ["filesystem", ".", "--json", "--no-update", "--no-verification"]
+
+  trivy:
+    profiles: ["security"]
+    image: aquasec/trivy:0.76.2
+    working_dir: /src
+    volumes: [".:/src", "trivy-cache:/root/.cache/trivy"]
+    command: ["fs", "--format", "json", "--output", "/src/reports/security/trivy.json", "."]
+
+  semgrep:
+    profiles: ["security"]
+    image: semgrep/semgrep:1.184.0
+    working_dir: /src
+    volumes: [".:/src"]
+    command: ["semgrep", "scan", "--metrics=off", "--config", "p/python", "--config", "p/react", "--exclude", "node_modules", "--exclude", ".venv", "--exclude", "reports", "--json", "--output", "/src/reports/security/semgrep.json", "."]
+
+volumes:
+  tenant: {}
+  backup: {}
+  trivy-cache: {}

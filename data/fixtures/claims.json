@@ -1,0 +1,65 @@
+[
+  {
+    "id": "einvoice",
+    "passage": "T1-einvoice",
+    "tokens": [
+      "structured",
+      "electronically",
+      "Federal Tax Authority"
+    ]
+  },
+  {
+    "id": "historical-july",
+    "passage": "T2-july",
+    "tokens": [
+      "31 July 2026"
+    ]
+  },
+  {
+    "id": "mof-exceed",
+    "passage": "T3-october",
+    "tokens": [
+      "exceed AED 50 million",
+      "30 October 2026"
+    ]
+  },
+  {
+    "id": "fta-equal",
+    "passage": "T4-equal-or-exceed",
+    "tokens": [
+      "equal or exceed",
+      "30 October 2026"
+    ]
+  },
+  {
+    "id": "fta-below",
+    "passage": "T4-below",
+    "tokens": [
+      "below AED 50 million",
+      "31 March 2027"
+    ]
+  },
+  {
+    "id": "ct-zero",
+    "passage": "T5-zero",
+    "tokens": [
+      "375,000",
+      "0%"
+    ]
+  },
+  {
+    "id": "ct-nine",
+    "passage": "T5-nine",
+    "tokens": [
+      "375,000",
+      "9%"
+    ]
+  },
+  {
+    "id": "free-zone",
+    "passage": "T5-free-zone",
+    "tokens": [
+      "Qualifying Free Zone Persons"
+    ]
+  }
+]

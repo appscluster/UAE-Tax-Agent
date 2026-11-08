@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T22:10:00Z",
+  "title": "Design System: UAE Tax and eInvoicing Readiness",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#110B19", "tonalRamp": ["#110B19", "#241C2C", "#3A3144", "#52485C", "#6E6478", "#948C9C", "#C4BECA", "#F3F1F5"] },
+      "navy": { "role": "neutral", "displayName": "Navy", "canonical": "#353E60", "tonalRamp": ["#15182A", "#232844", "#353E60", "#4C567C", "#6A7496", "#929AB4", "#C4C8D6", "#F2F3F7"] },
+      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#5C5968", "tonalRamp": ["#1C1B22", "#322F3A", "#5C5968", "#767384", "#9693A2", "#B8B5C0", "#DCD9E2", "#F6F5F8"] },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#E2E2E2", "tonalRamp": ["#2A2A2A", "#4A4A4A", "#6E6E6E", "#969696", "#B8B8B8", "#D2D2D2", "#E2E2E2", "#F7F7F7"] },
+      "field": { "role": "neutral", "displayName": "Field", "canonical": "#F4F4F7", "tonalRamp": ["#222228", "#3A3A44", "#5A5A66", "#7C7C88", "#A4A4AE", "#CCCCD2", "#E4E4EA", "#F4F4F7"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#FFFFFF", "tonalRamp": ["#1A1A1A", "#333333", "#4D4D4D", "#666666", "#999999", "#CCCCCC", "#EEEEEE", "#FFFFFF"] },
+      "violet": { "role": "primary", "displayName": "Violet", "canonical": "#554EAD", "tonalRamp": ["#16143A", "#2A2668", "#3E3890", "#554EAD", "#6A62C8", "#8E88D8", "#C2BEEA", "#F1F0FA"] },
+      "violet-deep": { "role": "primary", "displayName": "Violet Deep", "canonical": "#433C96", "tonalRamp": ["#12102E", "#221E58", "#332C78", "#433C96", "#5A52B0", "#847ECA", "#C0BBE6", "#EFEDF8"] },
+      "lilac": { "role": "secondary", "displayName": "Lilac", "canonical": "#886AC4", "tonalRamp": ["#241838", "#3C2860", "#5C3E90", "#886AC4", "#A48AD4", "#C4B4E4", "#E4DCF4", "#F8F5FC"] },
+      "bronze": { "role": "tertiary", "displayName": "Bronze", "canonical": "#A2684A", "tonalRamp": ["#2A160E", "#4A2C1C", "#70422C", "#A2684A", "#C08868", "#D8B49A", "#EEDCCE", "#FBF6F2"] },
+      "ok": { "role": "neutral", "displayName": "Ok", "canonical": "#1B7A45", "tonalRamp": ["#062414", "#0E3E22", "#1B7A45", "#2E9A5C", "#57B47C", "#8ED0A8", "#C8EAD6", "#F2FBF6"] },
+      "mesh": { "role": "secondary", "displayName": "Mesh", "canonical": "#6A5BB8", "tonalRamp": ["#1A1640", "#322C70", "#4C4498", "#6A5BB8", "#8A7ECC", "#B4AAE0", "#DAD4F2", "#F6F4FC"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "One headline in the shell." },
+      "headline": { "displayName": "Headline", "purpose": "Section title and the floating card title." },
+      "title": { "displayName": "Title", "purpose": "A column name." },
+      "body": { "displayName": "Body", "purpose": "The sentence under the headline and the trace bubbles." },
+      "label": { "displayName": "Label", "purpose": "Field labels, toggles, and the primary button." }
+    },
+    "shadows": [
+      { "name": "shell", "value": "0 24px 60px rgba(17, 11, 25, 0.08)", "purpose": "The white split surface on the gray field." },
+      { "name": "card", "value": "0 18px 40px rgba(17, 11, 25, 0.16)", "purpose": "The trace card on the mesh." },
+      { "name": "selected-pill", "value": "0 6px 16px rgba(17, 11, 25, 0.06)", "purpose": "The active half of a toggle." },
+      { "name": "button", "value": "0 10px 20px rgba(85, 78, 173, 0.25)", "purpose": "The primary button only." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Scroll reveals, 900ms, once. Off when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "960px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The violet control that advances the review.",
+      "html": "<button class=\"ds-btn-primary\">Sign in</button>",
+      "css": ".ds-btn-primary { width: 100%; min-height: 48px; border: 0; border-radius: 12px; color: #FFFFFF; background: linear-gradient(180deg, #6A62C8 0%, #554EAD 100%); font-family: Satoshi, Tajawal, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; box-shadow: 0 10px 20px rgba(85, 78, 173, 0.25); cursor: pointer; } .ds-btn-primary:hover { background: #433C96; } .ds-btn-primary:focus-visible { outline: 2px solid #554EAD; outline-offset: 3px; }"
+    },
+    {
+      "name": "Bar Pill",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "The ink pill in the top bar.",
+      "html": "<a class=\"ds-bar\" href=\"#desk\">Sign in</a>",
+      "css": ".ds-bar { display: inline-block; background: #110B19; color: #FFFFFF; text-decoration: none; border-radius: 999px; padding: 10px 16px; font-family: Satoshi, Tajawal, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; } .ds-bar:hover { background: #433C96; } .ds-bar:focus-visible { outline: 2px solid #554EAD; outline-offset: 3px; }"
+    },
+    {
+      "name": "Mode Toggle",
+      "kind": "chip",
+      "refersTo": "chip-selected",
+      "description": "Two-way pill for Log in and Sign up.",
+      "html": "<div class=\"ds-switch\"><button class=\"ds-switch-on\" type=\"button\">Log in</button><button type=\"button\">Sign up</button></div>",
+      "css": ".ds-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; background: #F4F4F7; border-radius: 999px; } .ds-switch button { border: 0; background: transparent; border-radius: 999px; padding: 10px 12px; color: #5C5968; font-family: Satoshi, Tajawal, system-ui, sans-serif; font-weight: 500; } .ds-switch-on { background: #FFFFFF; color: #110B19; box-shadow: 0 6px 16px rgba(17, 11, 25, 0.06); }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field with a line border and a violet focus ring.",
+      "html": "<label class=\"ds-field\"><span>Email</span><input type=\"email\" placeholder=\"reviewer@desert-ledger.example\" /></label>",
+      "css": ".ds-field { display: block; font-family: Satoshi, Tajawal, system-ui, sans-serif; color: #353E60; } .ds-field span { display: block; margin-bottom: 6px; font-size: 0.875rem; font-weight: 500; } .ds-field input { width: 100%; box-sizing: border-box; min-height: 48px; border: 1px solid #E2E2E2; border-radius: 12px; padding: 12px; color: #353E60; caret-color: #554EAD; } .ds-field input:focus { outline: none; border-color: #554EAD; box-shadow: 0 0 0 3px rgba(85, 78, 173, 0.15); }"
+    },
+    {
+      "name": "Trace Card",
+      "kind": "card",
+      "refersTo": "card-trace",
+      "description": "The white card that floats on the violet mesh.",
+      "html": "<article class=\"ds-trace\"><h2>Agent trace</h2><p class=\"ds-bubble\">Extractor read six synthetic invoices. One has no buyer identifier.</p></article>",
+      "css": ".ds-trace { background: #FFFFFF; color: #110B19; border-radius: 22px; padding: 16px; box-shadow: 0 18px 40px rgba(17, 11, 25, 0.16); font-family: Satoshi, Tajawal, system-ui, sans-serif; } .ds-trace h2 { margin: 0 0 12px; font-size: 2rem; letter-spacing: -0.03em; } .ds-bubble { margin: 0; background: #F4F4F7; border-radius: 14px; padding: 10px 12px; color: #353E60; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Split Desk",
+    "overview": "The page sits on a cool gray field. The working surface is one white shell, split in half, taken from the SaaS project management login screen. One half holds the sentence and the control. The other half is a violet mesh with a single white card floating on it. That card is where the work is shown: the agent trace, the batch, the thing a person has to sign.\n\nThis is a readiness desk for one synthetic UAE tenant, in English and Arabic. The shell is the same object on every screen. A form, a review list, and an approval all live inside it. The interface does not file, pay, or send an invoice.",
+    "keyCharacteristics": [
+      "Cool gray field, one white shell, a soft offset shadow",
+      "Split: reading and controls on one half, a violet mesh and a floating card on the other",
+      "Violet for the action that advances the review, ink for the small session pill",
+      "Navy for reading text, a darker gray than the shot's pale chip for secondary sentences",
+      "Pill toggles, 12px fields, a 48px primary button",
+      "English left-to-right and Arabic right-to-left, with the mesh half moving to the opposite edge"
+    ],
+    "rules": [
+      { "name": "The One Action Rule", "body": "Violet is the color of the control that moves the review forward. Ink is only the small pill in the bar. Bronze is only a problem. Do not paint a pass, a chart, or a headline in a second saturated color.", "section": "colors" },
+      { "name": "The Readable Gray Rule", "body": "Secondary text is muted (#5C5968). Do not set body or placeholder copy in #A4A2AC.", "section": "colors" },
+      { "name": "The LTR Figures Rule", "body": "Amounts, identifiers, dates, and email addresses set left-to-right in Satoshi. The sentence around them follows the page direction.", "section": "typography" },
+      { "name": "The One Sentence Rule", "body": "The display line is one sentence. A wrap is the same sentence, not a second claim.", "section": "typography" },
+      { "name": "The Opposite Half Rule", "body": "The mesh and the floating card always occupy the half opposite the headline. Translating the words without moving that half is a broken layout.", "section": "layout" },
+      { "name": "The One Lift Rule", "body": "A screen has the shell and, on the mesh, one card. Do not stack a card on the form half. Lists inside the shell are flat rows with a line, not more shadows.", "section": "elevation" },
+      { "name": "The Pill Or Twelve Rule", "body": "A control that switches mode, or that lives in the top bar, is a pill. A control that submits a field is 12px, the same radius as the field. Do not mix those two radii on one control.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep the page on field (#F4F4F7) and the work inside one paper shell.",
+      "Do put the headline and the form on one half and the mesh with one floating card on the other.",
+      "Do use violet (#554EAD) for the control that advances the review, and bronze (#A2684A) for a failed rule or an escalation.",
+      "Do set Arabic in Tajawal and move the mesh half to the left. Keep emails, amounts, and identifiers left-to-right.",
+      "Do show missing evidence at the same size as a pass. \"To verify\" is a status, not a footnote.",
+      "Do label synthetic data in the label size wherever an identifier is on screen."
+    ],
+    "donts": [
+      "Don't return to the earlier near-black field, glass cards, or cobalt chips. That theme is retired.",
+      "Don't copy the reference product's name, its chat about homepage structure, or its outside-account logos. Those buttons stay disconnected.",
+      "Don't set secondary text in #A4A2AC.",
+      "Don't use violet as a wash behind the whole page. The mesh stays inside its half.",
+      "Don't show a compliance badge, a rating, or a savings figure the run did not compute.",
+      "Don't translate Arabic by flipping strings only. The floating card changes halves."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local data and scan output
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+backend/var/
+reports/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Local agent tooling
+.cursor/
+.impeccable/hook.cache.json
+
+# OS and editors
+.DS_Store
+*.swp
+.idea/

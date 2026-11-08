@@ -1,0 +1,7 @@
+{
+  "kind": "contract",
+  "contract_id": "CTR-DL-01",
+  "synthetic": true,
+  "title": "Supply contract",
+  "notes": "Customer assertion of annual revenue AED 62000000. This is not a verified filing."
+}

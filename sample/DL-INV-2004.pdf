@@ -1,0 +1,115 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2820 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(SYNTHETIC SAMPLE - NOT A TAX RECORD AND NOT AN EINVOICE) Tj
+0 -14 Td (Desert Ledger Trading LLC) Tj
+0 -14 Td (Warehouse 14, Street 8, Al Quoz Industrial 3, Dubai) Tj
+0 -14 Td (PO Box 94021, Dubai    Tel +971 4 000 1400) Tj
+0 -14 Td (accounts@desert-ledger.example) Tj
+0 -14 Td (TRN SYNTHETIC_TRN_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Document          DL-INV-2004.pdf) Tj
+0 -14 Td (Invoice ID        DL-INV-2004) Tj
+0 -14 Td (Issue date        2026-09-26) Tj
+0 -14 Td (Supply date       2026-09-26) Tj
+0 -14 Td (Due date          2026-10-26) Tj
+0 -14 Td (Currency          AED) Tj
+0 -14 Td (Payment terms     30 days, less a 2% settlement if paid within 7 days) Tj
+0 -14 Td (Purchase order    HG-PO-4460) Tj
+0 -14 Td (Delivery note     DL-DN-7810) Tj
+0 -14 Td () Tj
+0 -14 Td (Buyer) Tj
+0 -14 Td (  Name            Harbor Glass Trading LLC) Tj
+0 -14 Td (  Address         Unit 22, Ras Al Khor Industrial 2, Dubai) Tj
+0 -14 Td (  TRN             SYNTHETIC_BUYER_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Description                              Qty  Unit         Net          VAT) Tj
+0 -14 Td (LED panel 60x60, 40W                        20 each  AED 1,600.00    5%    AED 80.00) Tj
+0 -14 Td (Driver, constant current                    10 each  AED 1,500.00    5%    AED 75.00) Tj
+0 -14 Td (Suspension kit                                5 set    AED 600.00    5%    AED 30.00) Tj
+0 -14 Td (Commissioning visit                          8 hour    AED 400.00    5%    AED 20.00) Tj
+0 -14 Td () Tj
+0 -14 Td (Net total         AED 4,100.00) Tj
+0 -14 Td (VAT total         AED 205.00) Tj
+0 -14 Td (Gross total       AED 4,218.90) Tj
+0 -14 Td () Tj
+0 -14 Td (Notes) Tj
+0 -14 Td (The face shows a settlement discount in the gross total. The lines do not carry that disco) Tj
+0 -14 Td (unt. Synthetic invoice. Not a tax record.) Tj
+0 -14 Td () Tj
+0 -14 Td (Settlement        2% if paid by 2026-10-03, shown in the gross total only) Tj
+0 -14 Td () Tj
+0 -14 Td (This PDF is a synthetic desk sample. It is not a filing.) Tj
+0 -14 Td (---JSON---) Tj
+0 -14 Td (eyJraW5kIjogImludm9pY2UiLCAiaW52b2ljZV9pZCI6ICJETC1JTlYtMjAwNCIsICJzeW50aGV0aWMi) Tj
+0 -14 Td (OiB0cnVlLCAic3VwcGxpZXJfbmFtZSI6ICJEZXNlcnQgTGVkZ2VyIFRyYWRpbmcgTExDIiwgInN1cHBs) Tj
+0 -14 Td (aWVyX3RybiI6ICJTWU5USEVUSUNfVFJOX05PVF9WQUxJRCIsICJzdXBwbGllcl9hZGRyZXNzIjogIldh) Tj
+0 -14 Td (cmVob3VzZSAxNCwgU3RyZWV0IDgsIEFsIFF1b3ogSW5kdXN0cmlhbCAzLCBEdWJhaSIsICJzdXBwbGll) Tj
+0 -14 Td (cl9wb19ib3giOiAiUE8gQm94IDk0MDIxLCBEdWJhaSIsICJzdXBwbGllcl9waG9uZSI6ICIrOTcxIDQg) Tj
+0 -14 Td (MDAwIDE0MDAiLCAic3VwcGxpZXJfZW1haWwiOiAiYWNjb3VudHNAZGVzZXJ0LWxlZGdlci5leGFtcGxl) Tj
+0 -14 Td (IiwgImN1cnJlbmN5IjogIkFFRCIsICJsaW5lcyI6IFt7ImRlc2NyaXB0aW9uIjogIkxFRCBwYW5lbCA2) Tj
+0 -14 Td (MHg2MCwgNDBXIiwgInF0eSI6IDIwLCAidW5pdCI6ICJlYWNoIiwgInVuaXRfcHJpY2UiOiA4MC4wLCAi) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 1693 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(bmV0IjogMTYwMC4wLCAidmF0X3JhdGUiOiAwLjA1LCAidmF0IjogODAuMH0sIHsiZGVzY3JpcHRpb24i) Tj
+0 -14 Td (OiAiRHJpdmVyLCBjb25zdGFudCBjdXJyZW50IiwgInF0eSI6IDEwLCAidW5pdCI6ICJlYWNoIiwgInVu) Tj
+0 -14 Td (aXRfcHJpY2UiOiAxNTAuMCwgIm5ldCI6IDE1MDAuMCwgInZhdF9yYXRlIjogMC4wNSwgInZhdCI6IDc1) Tj
+0 -14 Td (LjB9LCB7ImRlc2NyaXB0aW9uIjogIlN1c3BlbnNpb24ga2l0IiwgInF0eSI6IDUsICJ1bml0IjogInNl) Tj
+0 -14 Td (dCIsICJ1bml0X3ByaWNlIjogMTIwLjAsICJuZXQiOiA2MDAuMCwgInZhdF9yYXRlIjogMC4wNSwgInZh) Tj
+0 -14 Td (dCI6IDMwLjB9LCB7ImRlc2NyaXB0aW9uIjogIkNvbW1pc3Npb25pbmcgdmlzaXQiLCAicXR5IjogOCwg) Tj
+0 -14 Td (InVuaXQiOiAiaG91ciIsICJ1bml0X3ByaWNlIjogNTAuMCwgIm5ldCI6IDQwMC4wLCAidmF0X3JhdGUi) Tj
+0 -14 Td (OiAwLjA1LCAidmF0IjogMjAuMH1dLCAibmV0X3RvdGFsIjogNDEwMC4wLCAidmF0X3RvdGFsIjogMjA1) Tj
+0 -14 Td (LjAsICJncm9zc190b3RhbCI6IDQyMTguOSwgIm5vdGVzIjogIlRoZSBmYWNlIHNob3dzIGEgc2V0dGxl) Tj
+0 -14 Td (bWVudCBkaXNjb3VudCBpbiB0aGUgZ3Jvc3MgdG90YWwuIFRoZSBsaW5lcyBkbyBub3QgY2FycnkgdGhh) Tj
+0 -14 Td (dCBkaXNjb3VudC4gU3ludGhldGljIGludm9pY2UuIE5vdCBhIHRheCByZWNvcmQuIiwgInNlZWRfY2xh) Tj
+0 -14 Td (c3NpZmllcl9lcnJvciI6ICIiLCAiYnV5ZXJfbmFtZSI6ICJIYXJib3IgR2xhc3MgVHJhZGluZyBMTEMi) Tj
+0 -14 Td (LCAiYnV5ZXJfdHJuIjogIlNZTlRIRVRJQ19CVVlFUl9OT1RfVkFMSUQiLCAiYnV5ZXJfYWRkcmVzcyI6) Tj
+0 -14 Td (ICJVbml0IDIyLCBSYXMgQWwgS2hvciBJbmR1c3RyaWFsIDIsIER1YmFpIiwgImlzc3VlX2RhdGUiOiAi) Tj
+0 -14 Td (MjAyNi0wOS0yNiIsICJzdXBwbHlfZGF0ZSI6ICIyMDI2LTA5LTI2IiwgImR1ZV9kYXRlIjogIjIwMjYt) Tj
+0 -14 Td (MTAtMjYiLCAicGF5bWVudF90ZXJtcyI6ICIzMCBkYXlzLCBsZXNzIGEgMiUgc2V0dGxlbWVudCBpZiBw) Tj
+0 -14 Td (YWlkIHdpdGhpbiA3IGRheXMiLCAicHVyY2hhc2Vfb3JkZXIiOiAiSEctUE8tNDQ2MCIsICJkZWxpdmVy) Tj
+0 -14 Td (eV9ub3RlIjogIkRMLUROLTc4MTAifQ==) Tj
+0 -14 Td () Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000003119 00000 n 
+0000003245 00000 n 
+0000004990 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+5060
+%%EOF

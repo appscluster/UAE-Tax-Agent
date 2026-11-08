@@ -1,0 +1,70 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1973 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(SYNTHETIC SAMPLE - NOT A TAX RECORD AND NOT AN EINVOICE) Tj
+0 -14 Td (Desert Ledger Trading LLC) Tj
+0 -14 Td () Tj
+0 -14 Td (Document file    DL-INV-1006.pdf) Tj
+0 -14 Td (Invoice ID       DL-INV-1006) Tj
+0 -14 Td (Issue date       2026-09-12) Tj
+0 -14 Td (Currency         AED) Tj
+0 -14 Td () Tj
+0 -14 Td (Supplier) Tj
+0 -14 Td (  Name           Desert Ledger Trading LLC) Tj
+0 -14 Td (  TRN            SYNTHETIC_TRN_NOT_VALID) Tj
+0 -14 Td (Buyer) Tj
+0 -14 Td (  Name           Harbor Glass Trading LLC) Tj
+0 -14 Td (  TRN            SYNTHETIC_BUYER_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Description                 Qty     Unit        Net        VAT     VAT amount) Tj
+0 -14 Td (LED panels                   10  AED 100.00  AED 1,000.00     5%   AED 50.00) Tj
+0 -14 Td () Tj
+0 -14 Td (Net total        AED 1,000.00) Tj
+0 -14 Td (VAT total        AED 50.00) Tj
+0 -14 Td (Gross total      AED 1,050.00) Tj
+0 -14 Td () Tj
+0 -14 Td (Notes) Tj
+0 -14 Td (Appoint the ASP by 31 July 2026.) Tj
+0 -14 Td () Tj
+0 -14 Td (This PDF is a synthetic desk sample. It is not a filing.) Tj
+0 -14 Td (---JSON---) Tj
+0 -14 Td (eyJraW5kIjogImludm9pY2UiLCAiaW52b2ljZV9pZCI6ICJETC1JTlYtMTAwNiIsICJzeW50aGV0aWMi) Tj
+0 -14 Td (OiB0cnVlLCAic3VwcGxpZXJfbmFtZSI6ICJEZXNlcnQgTGVkZ2VyIFRyYWRpbmcgTExDIiwgInN1cHBs) Tj
+0 -14 Td (aWVyX3RybiI6ICJTWU5USEVUSUNfVFJOX05PVF9WQUxJRCIsICJidXllcl9uYW1lIjogIkhhcmJvciBH) Tj
+0 -14 Td (bGFzcyBUcmFkaW5nIExMQyIsICJidXllcl90cm4iOiAiU1lOVEhFVElDX0JVWUVSX05PVF9WQUxJRCIs) Tj
+0 -14 Td (ICJjdXJyZW5jeSI6ICJBRUQiLCAiaXNzdWVfZGF0ZSI6ICIyMDI2LTA5LTEyIiwgImxpbmVzIjogW3si) Tj
+0 -14 Td (ZGVzY3JpcHRpb24iOiAiTEVEIHBhbmVscyIsICJxdHkiOiAxMCwgInVuaXRfcHJpY2UiOiAxMDAsICJu) Tj
+0 -14 Td (ZXQiOiAxMDAwLCAidmF0X3JhdGUiOiAwLjA1LCAidmF0IjogNTB9XSwgIm5ldF90b3RhbCI6IDEwMDAs) Tj
+0 -14 Td (ICJ2YXRfdG90YWwiOiA1MCwgImdyb3NzX3RvdGFsIjogMTA1MCwgIm5vdGVzIjogIkFwcG9pbnQgdGhl) Tj
+0 -14 Td (IEFTUCBieSAzMSBKdWx5IDIwMjYuIiwgInNlZWRfY2xhc3NpZmllcl9lcnJvciI6ICIifQ==) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002266 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2336
+%%EOF

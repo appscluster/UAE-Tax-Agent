@@ -1,0 +1,641 @@
+[
+  {
+    "id": "A01",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-1",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A02",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-2",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A03",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-3",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A04",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-4",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A05",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-5",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A06",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-6",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A07",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-7",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A08",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-8",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A09",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-9",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050.0,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A10",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-10",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050.004,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A11",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-11",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1049.996,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A12",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-12",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050.01,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": []
+  },
+  {
+    "id": "A13",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-13",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1063,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "totals_reconcile"
+    ]
+  },
+  {
+    "id": "A14",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-14",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1064,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "totals_reconcile"
+    ]
+  },
+  {
+    "id": "A15",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-15",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1065,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "totals_reconcile"
+    ]
+  },
+  {
+    "id": "A16",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-16",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1066,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "totals_reconcile"
+    ]
+  },
+  {
+    "id": "A17",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-17",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "buyer_id_present"
+    ]
+  },
+  {
+    "id": "A18",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-18",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "   ",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "buyer_id_present"
+    ]
+  },
+  {
+    "id": "A19",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-19",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [],
+    "expect_rules": [
+      "buyer_id_present",
+      "totals_reconcile"
+    ]
+  },
+  {
+    "id": "A20",
+    "invoice": {
+      "kind": "invoice",
+      "invoice_id": "CASE-20",
+      "synthetic": true,
+      "supplier_name": "Desert Ledger Trading LLC",
+      "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+      "buyer_name": "Harbor Glass Trading LLC",
+      "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+      "currency": "AED",
+      "issue_date": "2026-09-12",
+      "lines": [
+        {
+          "description": "LED panels",
+          "qty": 10,
+          "unit_price": 100,
+          "net": 1000,
+          "vat_rate": 0.05,
+          "vat": 50
+        }
+      ],
+      "net_total": 1000,
+      "vat_total": 50,
+      "gross_total": 1050,
+      "notes": "Synthetic invoice. Not a tax record.",
+      "seed_classifier_error": ""
+    },
+    "prior_ids": [
+      "CASE-20"
+    ],
+    "expect_rules": [
+      "duplicate_invoice_id"
+    ]
+  }
+]

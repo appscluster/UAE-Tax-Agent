@@ -1,0 +1,111 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2767 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(SYNTHETIC SAMPLE - NOT A TAX RECORD AND NOT AN EINVOICE) Tj
+0 -14 Td (Desert Ledger Trading LLC) Tj
+0 -14 Td (Warehouse 14, Street 8, Al Quoz Industrial 3, Dubai) Tj
+0 -14 Td (PO Box 94021, Dubai    Tel +971 4 000 1400) Tj
+0 -14 Td (accounts@desert-ledger.example) Tj
+0 -14 Td (TRN SYNTHETIC_TRN_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Document          DL-INV-2002.pdf) Tj
+0 -14 Td (Invoice ID        DL-INV-2002) Tj
+0 -14 Td (Issue date        2026-09-21) Tj
+0 -14 Td (Supply date       2026-09-21) Tj
+0 -14 Td (Due date          2026-10-05) Tj
+0 -14 Td (Currency          AED) Tj
+0 -14 Td (Payment terms     14 days from the invoice date) Tj
+0 -14 Td (Purchase order    ML-PO-190) Tj
+0 -14 Td (Delivery note     DL-DN-7794) Tj
+0 -14 Td () Tj
+0 -14 Td (Buyer) Tj
+0 -14 Td (  Name            Mina Lantern LLC) Tj
+0 -14 Td (  Address         Warehouse B, Al Sajaa Industrial, Sharjah) Tj
+0 -14 Td (  TRN             SYNTHETIC_BUYER_TWO_NOT_VALID) Tj
+0 -14 Td () Tj
+0 -14 Td (Description                              Qty  Unit         Net          VAT) Tj
+0 -14 Td (Green coffee, 60kg sack                     40 sack  AED 3,400.00    5%   AED 170.00) Tj
+0 -14 Td (Printed export sack                        200 each    AED 250.00    5%    AED 12.50) Tj
+0 -14 Td (Roasted coffee, designated-zone movement    15 sack  AED 1,350.00    0%     AED 0.00) Tj
+0 -14 Td () Tj
+0 -14 Td (Net total         AED 5,000.00) Tj
+0 -14 Td (VAT total         AED 182.50) Tj
+0 -14 Td (Gross total       AED 5,182.50) Tj
+0 -14 Td () Tj
+0 -14 Td (Notes) Tj
+0 -14 Td (One line is stated at 0% VAT. Whether that rate fits the supply stays to verify. Synthetic) Tj
+0 -14 Td ( invoice. Not a tax record.) Tj
+0 -14 Td () Tj
+0 -14 Td (Bank              Synthetic Bank, IBAN AE00 SYNTH 0000 0000 0001) Tj
+0 -14 Td () Tj
+0 -14 Td (This PDF is a synthetic desk sample. It is not a filing.) Tj
+0 -14 Td (---JSON---) Tj
+0 -14 Td (eyJraW5kIjogImludm9pY2UiLCAiaW52b2ljZV9pZCI6ICJETC1JTlYtMjAwMiIsICJzeW50aGV0aWMi) Tj
+0 -14 Td (OiB0cnVlLCAic3VwcGxpZXJfbmFtZSI6ICJEZXNlcnQgTGVkZ2VyIFRyYWRpbmcgTExDIiwgInN1cHBs) Tj
+0 -14 Td (aWVyX3RybiI6ICJTWU5USEVUSUNfVFJOX05PVF9WQUxJRCIsICJzdXBwbGllcl9hZGRyZXNzIjogIldh) Tj
+0 -14 Td (cmVob3VzZSAxNCwgU3RyZWV0IDgsIEFsIFF1b3ogSW5kdXN0cmlhbCAzLCBEdWJhaSIsICJzdXBwbGll) Tj
+0 -14 Td (cl9wb19ib3giOiAiUE8gQm94IDk0MDIxLCBEdWJhaSIsICJzdXBwbGllcl9waG9uZSI6ICIrOTcxIDQg) Tj
+0 -14 Td (MDAwIDE0MDAiLCAic3VwcGxpZXJfZW1haWwiOiAiYWNjb3VudHNAZGVzZXJ0LWxlZGdlci5leGFtcGxl) Tj
+0 -14 Td (IiwgImN1cnJlbmN5IjogIkFFRCIsICJsaW5lcyI6IFt7ImRlc2NyaXB0aW9uIjogIkdyZWVuIGNvZmZl) Tj
+0 -14 Td (ZSwgNjBrZyBzYWNrIiwgInF0eSI6IDQwLCAidW5pdCI6ICJzYWNrIiwgInVuaXRfcHJpY2UiOiA4NS4w) Tj
+0 -14 Td (LCAibmV0IjogMzQwMC4wLCAidmF0X3JhdGUiOiAwLjA1LCAidmF0IjogMTcwLjB9LCB7ImRlc2NyaXB0) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 1357 >>
+stream
+BT
+/F1 10 Tf
+48 760 Td
+(aW9uIjogIlByaW50ZWQgZXhwb3J0IHNhY2siLCAicXR5IjogMjAwLCAidW5pdCI6ICJlYWNoIiwgInVu) Tj
+0 -14 Td (aXRfcHJpY2UiOiAxLjI1LCAibmV0IjogMjUwLjAsICJ2YXRfcmF0ZSI6IDAuMDUsICJ2YXQiOiAxMi41) Tj
+0 -14 Td (fSwgeyJkZXNjcmlwdGlvbiI6ICJSb2FzdGVkIGNvZmZlZSwgZGVzaWduYXRlZC16b25lIG1vdmVtZW50) Tj
+0 -14 Td (IiwgInF0eSI6IDE1LCAidW5pdCI6ICJzYWNrIiwgInVuaXRfcHJpY2UiOiA5MC4wLCAibmV0IjogMTM1) Tj
+0 -14 Td (MC4wLCAidmF0X3JhdGUiOiAwLjAsICJ2YXQiOiAwLjB9XSwgIm5ldF90b3RhbCI6IDUwMDAuMCwgInZh) Tj
+0 -14 Td (dF90b3RhbCI6IDE4Mi41LCAiZ3Jvc3NfdG90YWwiOiA1MTgyLjUsICJub3RlcyI6ICJPbmUgbGluZSBp) Tj
+0 -14 Td (cyBzdGF0ZWQgYXQgMCUgVkFULiBXaGV0aGVyIHRoYXQgcmF0ZSBmaXRzIHRoZSBzdXBwbHkgc3RheXMg) Tj
+0 -14 Td (dG8gdmVyaWZ5LiBTeW50aGV0aWMgaW52b2ljZS4gTm90IGEgdGF4IHJlY29yZC4iLCAic2VlZF9jbGFz) Tj
+0 -14 Td (c2lmaWVyX2Vycm9yIjogIiIsICJidXllcl9uYW1lIjogIk1pbmEgTGFudGVybiBMTEMiLCAiYnV5ZXJf) Tj
+0 -14 Td (dHJuIjogIlNZTlRIRVRJQ19CVVlFUl9UV09fTk9UX1ZBTElEIiwgImJ1eWVyX2FkZHJlc3MiOiAiV2Fy) Tj
+0 -14 Td (ZWhvdXNlIEIsIEFsIFNhamFhIEluZHVzdHJpYWwsIFNoYXJqYWgiLCAiaXNzdWVfZGF0ZSI6ICIyMDI2) Tj
+0 -14 Td (LTA5LTIxIiwgInN1cHBseV9kYXRlIjogIjIwMjYtMDktMjEiLCAiZHVlX2RhdGUiOiAiMjAyNi0xMC0w) Tj
+0 -14 Td (NSIsICJwYXltZW50X3Rlcm1zIjogIjE0IGRheXMgZnJvbSB0aGUgaW52b2ljZSBkYXRlIiwgInB1cmNo) Tj
+0 -14 Td (YXNlX29yZGVyIjogIk1MLVBPLTE5MCIsICJkZWxpdmVyeV9ub3RlIjogIkRMLUROLTc3OTQifQ==) Tj
+0 -14 Td () Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000003066 00000 n 
+0000003192 00000 n 
+0000004601 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+4671
+%%EOF

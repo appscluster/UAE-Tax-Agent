@@ -1,0 +1,159 @@
+{
+  "generated": "2026-11-07",
+  "files": [
+    {
+      "path": "data/fixtures/CTR-DL-01.json",
+      "sha256": "22b073e60ae5a8e69a96bf9fdb7cbe4721c6972ef3bc986f65e2be7d4a162dec",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/CTR-DL-01.pdf",
+      "sha256": "fbae1b3c0d07133bb0ca5d2cea7bce6fb070afde003740d570f430a8b08fdf5c",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/CTR-DL-02.json",
+      "sha256": "a17e223f16f7df54a9efa2348631dcdede7bd6920a692003a216cabc20c673b5",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/CTR-DL-02.pdf",
+      "sha256": "c72ae93c1be5458f758b60c828b05994460cd2e2d57815cca8b46b6fadc7ab05",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1001.json",
+      "sha256": "fc240e9090baa629c9f451fba580aab2d8f03ca7c032d8e9712819edb2113b19",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1001.pdf",
+      "sha256": "4a59ae45ac9b024bc434bb6122de231b146e05ae4e24d0b74a7e9ff44a7b9773",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1002.json",
+      "sha256": "aafee9c80e76395429285b54853f7d61183629e89f5d6fa88a3e0c9e26cbbf1c",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1002.pdf",
+      "sha256": "dfdf8923c14ef37b04a3f21890d72e65a6d7a82faae8ebc123fbfae0d6822120",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1003.json",
+      "sha256": "a84a2cc67df761e4753acd4549da7eacd4db3befad5f6157bbaa34906ae96357",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1003.pdf",
+      "sha256": "3e2382850e22e603d46dafce6ec93447ed558feb30a820a0c63e46c2b3f554dc",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1004.json",
+      "sha256": "54963c0436e7a4df836493ddf765ed6c154def64f1fde820ca494c5a1f16ff53",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1004.pdf",
+      "sha256": "9b2745614a4295cbbfa214eecbddb8aa99e9ec8e912390d3f9fae14db8701c0e",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1005.json",
+      "sha256": "b3e9c8bebd697bc6658f9619051bc853cc5b4c625c1fa2c3ff78c0cc9635b1e9",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1005.pdf",
+      "sha256": "fe9691505c3aa86f8b49a4b0e18792738abbc3d3df7bac4bd26a05ad7d91fbf5",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1006.json",
+      "sha256": "657fab721a141d1fa0b6cbebd0bd5e27646273ce2fd82cb95691aa3e76a7e522",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/DL-INV-1006.pdf",
+      "sha256": "49c278a61bcc3a3327cd86831722484763a2fbf909d23029e277a086249f9dbb",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/answer_key.json",
+      "sha256": "92da9d11f256f56acbc004c902c41081407683db893e202064007d281c2f644c",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/arithmetic_cases.json",
+      "sha256": "b9cdc162804395ac098d1f0307e3c24946a6b6b77a7531ce1c27fbd80847e69d",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/boundaries.json",
+      "sha256": "b03a0e4e7c56bea77aaf99710eeb713f95e0ea72d245d6e080dcba7f76b861a6",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/claims.json",
+      "sha256": "9d33fb7829a2fd4206993f3edb594f4c7dd6ab4970ad227f282a332d9e734825",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/profile.json",
+      "sha256": "91adfbdb043a3feb7b742c1e06ac08eb9f8df832f8af12fe83357c9d4fff9d28",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    },
+    {
+      "path": "data/fixtures/unsupported_questions.json",
+      "sha256": "b4bd49122e288dab79db0e90d5262868821d99d5a931da299beb2ccbfc50707a",
+      "author": "synthetic-desk",
+      "source_version": "research-2026-11-07",
+      "expected_finding": "see data/fixtures/answer_key.json"
+    }
+  ]
+}

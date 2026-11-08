@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desert Ledger — 15 minute briefing</title>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" />
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f4f4f7; color: #353e60; font-family: Satoshi, system-ui, sans-serif; font-size: 1rem; line-height: 1.5; }
+    h1 { margin: 0 0 12px; color: #110b19; font-size: clamp(2.75rem, 5vw, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; }
+    h2 { margin: 0 0 8px; color: #110b19; font-size: 1.5rem; line-height: 1.25; }
+    .slide { display: none; min-height: 100vh; padding: 48px 8vw 88px; box-sizing: border-box; }
+    .slide.is-on { display: block; }
+    .kicker { color: #554ead; font-weight: 700; margin: 0 0 12px; }
+    ul { max-width: 68ch; padding-left: 1.2rem; }
+    li { margin: 8px 0; }
+    .bar { position: fixed; inset: auto 0 0 0; display: flex; justify-content: space-between; gap: 12px; padding: 16px 8vw; background: #fff; }
+    button { border: 0; background: #554ead; color: #fff; border-radius: 12px; min-height: 48px; padding: 0 18px; font: inherit; font-weight: 700; cursor: pointer; }
+    .mesh { height: 12px; border-radius: 999px; margin-bottom: 28px; background: radial-gradient(circle at 10% 50%, #c4e8dc, transparent 40%), radial-gradient(circle at 80% 50%, #886ac4, transparent 45%), #6a5bb8; }
+  </style>
+</head>
+<body>
+  <section class="slide is-on">
+    <div class="mesh"></div>
+    <p class="kicker">2 minutes · problem</p>
+    <h1>A PDF is not an eInvoice.</h1>
+    <ul>
+      <li>UAE finance teams are turning moving FTA and MoF dates into a readiness plan. One model checking itself will not catch its own miss.</li>
+      <li>The MoF July 2026 appointment date moved. On 7 November 2026 the larger cohort’s 30 October appointment date is already past.</li>
+      <li>AED 375,000 is a corporate-tax band. It does not set the eInvoicing phase. AED 50 million does, and the equal case is still unresolved.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="mesh"></div>
+    <p class="kicker">3 minutes · architecture and tools</p>
+    <h1>Two containers, one gateway, a person at the gate.</h1>
+    <ul>
+      <li>LangGraph is the planner. Extractor, classifier, and researcher operate. The validator is ordinary Python. The auditor does not see the classifier’s reasoning.</li>
+      <li>Pydantic holds the node outputs. SSE shows the handoff. Repair runs once, then the invoice is marked to verify.</li>
+      <li>Every model call is an OpenAI-compatible chat completion to the local OmniRoute gateway, primary <span dir="ltr">gh/gpt-5.6-terra</span>, one retry to <span dir="ltr">gh/gpt-5.6-luna</span>. A provider SDK is not in this repo.</li>
+      <li>Docker Compose is the run path. The tenant volume is encrypted. Backups sit on a second volume. <span dir="ltr">RESIDENCY_VERIFIED</span> is false, so only synthetic content can reach the model.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="mesh"></div>
+    <p class="kicker">6 minutes · live demo</p>
+    <h1>Desert Ledger, then a refusal.</h1>
+    <ul>
+      <li>Open the synthetic seat. Stated revenue is a customer assertion of AED 62,000,000. The TRN reads SYNTHETIC_TRN_NOT_VALID.</li>
+      <li>Load the batch. The validator rejects the missing buyer and the bad total, repairs the total once, and escalates.</li>
+      <li>Ask in Arabic why AED 375,000 does not schedule eInvoicing. Read the English passage from the corporate-tax guide.</li>
+      <li>The auditor disagrees on the free-zone line and the conflicting revenue. The July date loses to the 25 October 2026 FTA notice.</li>
+      <li>Approve a bounded pack. It is not a return. If the gateway is down, say the word replay before you play the labelled trace.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="mesh"></div>
+    <p class="kicker">2 minutes · challenges</p>
+    <h1>What the build actually hit.</h1>
+    <ul>
+      <li>MoF says “exceed” AED 50 million. FTA says “equal or exceed”. The desk refuses to pick a winner at equality.</li>
+      <li>The corporate-tax rates are on page 20 of the September 2023 PDF. The Arabic line is our translation, parked next to that English sentence.</li>
+      <li>A wrapped PDF broke the embedded JSON, so the fixture carries a base64 payload. Instruction-like text in an upload stays data.</li>
+      <li>LangGraph needed an explicit state or the batch disappeared between nodes. Token counts are real only when OmniRoute answers. The replay path records zeros and says so.</li>
+      <li>No accountant has scored the set. No saving is claimed. Residency of the upstream model is not verified.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="mesh"></div>
+    <p class="kicker">2 minutes · vision</p>
+    <h1>A jurisdiction pack a customer can supervise.</h1>
+    <ul>
+      <li>The same agent core can take a versioned pack for another country: frozen sources, deterministic checks, a human gate.</li>
+      <li>A DataRobot customer would run the containers, point storage and backups at the location their counsel requires, and turn on non-synthetic inference only after the provider’s processing location is checked.</li>
+      <li>Pilot it under supervision. Measure review time. Do not sell a saving that has not been measured, and do not promise an ASP connection this build does not have.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="mesh"></div>
+    <p class="kicker">How the rubric is met</p>
+    <h1>Problem, proof, and a visible catch.</h1>
+    <ul>
+      <li>Problem solving: dated deadlines, a boundary conflict, and a role for each risk.</li>
+      <li>Technical credibility: LangGraph, Pydantic, a deterministic validator, tenant isolation, and an audit row that survives a container restart.</li>
+      <li>Creativity: the audience sees the validator catch the classifier, then an Arabic answer with the English source beside it.</li>
+      <li>Strategic vision: containers, a residency gate, and a path to other jurisdiction packs without a fake compliance claim.</li>
+    </ul>
+  </section>
+  <div class="bar">
+    <button type="button" id="prev">Back</button>
+    <p id="count"></p>
+    <button type="button" id="next">Next</button>
+  </div>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    let index = 0;
+    const count = document.getElementById("count");
+    function show(next) {
+      index = Math.max(0, Math.min(slides.length - 1, next));
+      slides.forEach((slide, i) => slide.classList.toggle("is-on", i === index));
+      count.textContent = (index + 1) + " / " + slides.length;
+    }
+    document.getElementById("next").onclick = () => show(index + 1);
+    document.getElementById("prev").onclick = () => show(index - 1);
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") show(index + 1);
+      if (event.key === "ArrowLeft") show(index - 1);
+    });
+    show(0);
+  </script>
+</body>
+</html>

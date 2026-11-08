@@ -1,6 +1,92 @@
 # A: UAE Tax and eInvoicing Readiness Agent Team
 
-Project brief. Research checked on 7 November 2026, Asia/Dubai (UTC+4). Status: planning only. No application has been built or deployed.
+Project brief. Research checked on 7 November 2026, Asia/Dubai (UTC+4). The desk runs in Docker. It is a review aid for one synthetic tenant, not a filing system.
+
+## Run
+
+The local OmniRoute gateway must already be listening on port `20128`. This repo does not start it and does not change its configuration.
+
+```bash
+docker compose up --build
+```
+
+Open `http://127.0.0.1:8420`. Sign in with `reviewer@desert-ledger.example` and a password of at least 8 characters that contains a number or symbol, for example `ledger-demo-1`. Choose **Load the seeded batch**. The tenant is Desert Ledger Trading, `tenant_desert_ledger`, TRN `SYNTHETIC_TRN_NOT_VALID`.
+
+The seeded batch includes `DL-INV-1002.pdf` (missing buyer identifier and bad totals), the other invoice JSON files, and contract `CTR-DL-02` (the July 2026 date). One repair recomputes totals and then the missing buyer stays `to verify`. The auditor disagrees on the free-zone invoice and the conflicting revenue invoice. Invoice `DL-INV-1006` keeps the newer FTA source, T4.
+
+Ask, in Arabic or English: why AED 375,000 does not set the eInvoicing phase. The English passage stays beside the desk translation.
+
+If OmniRoute is down, set `LLM_MODE=replay` and start again. The desk labels that run as a replay and does not present those timings as live. Primary model `gh/gpt-5.6-terra`. One retry uses `gh/gpt-5.6-luna`. `RESIDENCY_VERIFIED` defaults to false, so a non-synthetic upload is refused before any model call.
+
+Tests, from a checkout with the dependencies in `backend/requirements.txt`:
+
+```bash
+pytest
+```
+
+Inside the API container:
+
+```bash
+docker compose run --rm -e LLM_MODE=replay -e DB_PATH=/tmp/readiness.db -e BACKUP_DIR=/tmp/backup backend pytest
+```
+
+Security scans, secret verification off:
+
+```bash
+mkdir -p reports/security
+docker compose --profile security run --rm gitleaks
+docker compose --profile security run --rm trufflehog
+docker compose --profile security run --rm trivy
+docker compose --profile security run --rm semgrep
+```
+
+The 15-minute deck is [docs/presentation.html](docs/presentation.html). The reviewer notes are [docs/runbook.md](docs/runbook.md).
+
+After sign-in, the desk menu is Companies, Statistics, Review, and **Explanation**. In Arabic the last label is **الشرح**. That page is the walkthrough below: how a review runs, which part of the assignment it answers, and which tool does the work. Three Excalidraw diagrams illustrate the handoff, the runtime, and the four criteria. Diagram labels stay in English and left to right. The paragraphs follow the language toggle.
+
+## Explanation
+
+### How a review runs
+
+A person loads a synthetic batch for one tenant. The orchestrator splits it. The extractor writes fields and keeps the page reference. The classifier proposes a VAT treatment and a labelled corporate-tax note. The researcher may attach only a passage from the frozen FTA and MoF register, with its version. The validator is Python: schema, required fields, and arithmetic. It can send an invoice back once. A missing buyer identifier stays `to verify`, because the repair cannot invent one. The auditor samples the call without the classifier’s reasoning. A disagreement is escalated. The person approves, rejects, or escalates. The signed result is a readiness note on this desk.
+
+Lavender nodes on the diagram call a model. The green validator does not. A sand box is a stop: one repair, then the row is held, or the auditor disagrees. The approver sees both.
+
+### Where the work sits
+
+The desk is React and Vite, served by nginx on port 8420. The API is FastAPI on port 8421. Each node emits a server-sent event, so the trace on screen is the run. SQLite on a tenant volume stores the document hash, source version, model, checker outcome, and the person who signed. A second volume holds backups. Every model call is one chat completion to the local OmniRoute gateway on port 20128. The primary model is `gh/gpt-5.6-terra`. One retry uses `gh/gpt-5.6-luna`. This repo does not start that gateway and does not change it. If the gateway is down, the desk plays a labelled replay and says those timings are not live measurements.
+
+`RESIDENCY_VERIFIED` defaults to false. A localhost address does not prove where an upstream provider processes data. While the flag is false, only synthetic content is sent. Any other upload is refused before a model call.
+
+The gate sits in front of the graph. A synthetic run may call OmniRoute. Anything else stops. The audit row is written to the tenant volume and copied to the backup volume.
+
+### How this answers the assignment
+
+The brief asks for a functioning code-first agent, a complete frontend and backend, and a 15-minute presentation: the problem, the architecture and tools, a live demo, the challenges, and a DataRobot vision.
+
+| Criterion | What this build shows |
+|---|---|
+| Problem | A PDF is not an eInvoice. The July 2026 appointment date moved, and the FTA notice of 25 October 2026 schedules the larger cohort at AED 50 million and above. One model checking its own batch would hide a bad total or a stale deadline. Each role owns one of those risks. Research date 2026-11-07. The registration number on screen is labelled synthetic. |
+| Technical credibility | LangGraph nodes with Pydantic output schemas. The validator is ordinary code. Repair stops after one attempt. The auditor does not receive the classifier’s reasoning. A cross-tenant read is refused before lookup. Approval waits until the checker has finished and the document hash is unchanged. The start command is `docker compose up`. |
+| Creativity | `DL-INV-1002` is missing a buyer identifier and its totals do not meet. The classifier still proposes a treatment. The validator names the failed rule, uses the one repair, and holds the row. The auditor disagrees on the free-zone invoice and the conflicting revenue invoice. An older deadline loses to the newer FTA source. An Arabic question about AED 375,000 returns a desk translation with the English passage beside it. That figure is a corporate-tax band. |
+| Strategic vision | A customer would keep this agent core and swap a versioned jurisdiction pack, then run it in containers with storage, logs, backups, and inference pointed at a location that has been checked. The build shows that gate. It leaves OmniRoute unverified. No savings figure is claimed, and nothing is sent to an accredited provider. |
+
+The six demo minutes follow that order: the tenant and its stated revenue, the batch splitting on the trace, the seeded rejection, the Arabic threshold question with the English citation, the auditor’s disagreement, and a bounded signature. A refusal is part of the same path. Challenges a speaker can say are the ones written after the build in [docs/rehearsal.md](docs/rehearsal.md): the AED 50 million sources disagree on “equal”, the repair cannot invent a buyer, and the 90 percent accountant target is not a result.
+
+### Tools used to deliver it
+
+| Tool | What it does here | Why it is in the repo |
+|---|---|---|
+| LangGraph | Runs the seven roles as nodes in one process | The handoff is the product. No graph database is called. |
+| Pydantic | Schema for each node’s output | The next node receives fields, not a free paragraph. |
+| Python validator | Buyer identifier, totals, duplicate id, stale deadline, and the AED 50 million boundary | A second model is not the proof. |
+| FastAPI | Documents, runs, server-sent events, decisions, reports, and questions | The desk and the graph share one contract. |
+| React and Vite | Companies, statistics, the review, and Explanation | The reviewer watches the trace, asks, and signs. |
+| SQLite | Tenant, document hash, source version, model, checker, and approver | The audit row stays on the volume after a restart. |
+| Docker Compose | A frontend container, an API container, and two volumes | The start command is `docker compose up`. |
+| OmniRoute | OpenAI-compatible chat completions on port 20128 | One local gateway. This repo does not call a provider SDK. |
+| pytest | Arithmetic, abstention, cross-tenant reads, thresholds, the stale deadline, and the residency refusal | The demo claims are tied to an answer key. |
+| Gitleaks, TruffleHog, Trivy, Semgrep | Scan this repo from the security profile | Secret verification stays off. |
 
 ## Business problem and UAE context
 
@@ -121,7 +207,7 @@ An incomplete invoice cannot establish tax liability. Never derive corporate tax
 
 ## Architecture and implementation
 
-This is a proposed application, not a working product yet. Build code first with a FastAPI backend, React and Vite frontend, and a LangGraph workflow. Use SSE to expose actual agent progress. Every run carries a tenant ID, source versions, tool results, approval state and an audit trail.
+The desk is the working review: a FastAPI backend, a React and Vite frontend, and a LangGraph workflow. SSE exposes agent progress. Every run carries a tenant ID, source versions, tool results, approval state and an audit trail. The same path is drawn on the Explanation page.
 
 ```mermaid
 flowchart TD
@@ -184,12 +270,7 @@ Allocate the 15 minute presentation as follows: problem and customer value 2 min
 
 ## Next steps
 
-1. Confirm this brief and the narrow MVP before coding.
-2. Freeze official source versions and have the domain reviewer approve rule interpretations.
-3. Author synthetic fixtures and expected results before implementing the graph.
-4. Build one complete vertical slice with frontend, backend, citations and approval.
-5. Add Arabic review, adversarial evals and container restart persistence checks.
-6. Run a timed rehearsal and disclose remaining limitations.
+The vertical slice is in the repo. Rehearse the six-minute path in [docs/runbook.md](docs/runbook.md), then fill any new limitation into [docs/rehearsal.md](docs/rehearsal.md) before the interview. An accountant still has to judge the Arabic answers. That 90% target is not a result this build claims.
 
 ## Shared official privacy sources
 

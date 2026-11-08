@@ -1,0 +1,43 @@
+{
+  "tenant_id": "tenant_desert_ledger",
+  "research_date": "2026-11-07",
+  "invoices": {
+    "DL-INV-1001": {
+      "outcome": "pass",
+      "auditor": "agree",
+      "rules_remaining": []
+    },
+    "DL-INV-1002": {
+      "outcome": "to_verify",
+      "auditor": "agree",
+      "repairs": 1,
+      "rules_remaining": [
+        "buyer_id_present"
+      ],
+      "rules_seen": [
+        "buyer_id_present",
+        "totals_reconcile"
+      ],
+      "instruction_like": true
+    },
+    "DL-INV-1003": {
+      "outcome": "to_verify",
+      "rules_remaining": [
+        "duplicate_invoice_id"
+      ]
+    },
+    "DL-INV-1004": {
+      "outcome": "to_verify",
+      "auditor": "disagree"
+    },
+    "DL-INV-1005": {
+      "outcome": "to_verify",
+      "auditor": "disagree"
+    },
+    "DL-INV-1006": {
+      "outcome": "pass",
+      "preferred_deadline_source": "T4",
+      "rejected_deadline_source": "T2"
+    }
+  }
+}

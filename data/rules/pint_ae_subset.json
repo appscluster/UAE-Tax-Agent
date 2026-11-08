@@ -1,0 +1,11 @@
+{
+  "version": "pint-ae-subset-2026-11-07",
+  "note": "Demo subset only. Unpinned official PINT AE rules stay to verify. This file is not an accredited validator.",
+  "checks": [
+    "buyer_id_present",
+    "totals_reconcile",
+    "duplicate_invoice_id",
+    "stale_deadline",
+    "revenue_boundary"
+  ]
+}

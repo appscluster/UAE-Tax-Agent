@@ -1,0 +1,11 @@
+{
+  "tenant_id": "tenant_desert_ledger",
+  "legal_name": "Desert Ledger Trading LLC",
+  "trn": "SYNTHETIC_TRN_NOT_VALID",
+  "seat": "mainland",
+  "free_zone": false,
+  "stated_revenue_aed": 62000000,
+  "revenue_is": "customer_assertion",
+  "research_date": "2026-11-07",
+  "currency": "AED"
+}

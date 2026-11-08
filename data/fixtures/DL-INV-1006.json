@@ -1,0 +1,26 @@
+{
+  "kind": "invoice",
+  "invoice_id": "DL-INV-1006",
+  "synthetic": true,
+  "supplier_name": "Desert Ledger Trading LLC",
+  "supplier_trn": "SYNTHETIC_TRN_NOT_VALID",
+  "buyer_name": "Harbor Glass Trading LLC",
+  "buyer_trn": "SYNTHETIC_BUYER_NOT_VALID",
+  "currency": "AED",
+  "issue_date": "2026-09-12",
+  "lines": [
+    {
+      "description": "LED panels",
+      "qty": 10,
+      "unit_price": 100,
+      "net": 1000,
+      "vat_rate": 0.05,
+      "vat": 50
+    }
+  ],
+  "net_total": 1000,
+  "vat_total": 50,
+  "gross_total": 1050,
+  "notes": "Appoint the ASP by 31 July 2026.",
+  "seed_classifier_error": ""
+}
